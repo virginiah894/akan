@@ -6,3 +6,6 @@ h1{
   /* background-image: url(/images/independence-square.jpg); */
 background-repeat: no-repeat;
 }
+button{
+  text-align: center;
+}
