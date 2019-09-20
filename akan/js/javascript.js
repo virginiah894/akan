@@ -11,6 +11,14 @@ function check(){
  return false;
   }
 }
+
+function checkMonth(){
+  var con=document.getElementById("mob");
+  if(con.value<=0 || con.value>12){
+    alert('Invalid Date of Birth Entered');
+ return false;
+  }
+}
 //   var m=document.querySelector("#mon");
 //   var t=document.querySelector("#tue");
 //   var w=document.querySelector("#wed");
