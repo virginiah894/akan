@@ -1,7 +1,6 @@
 document.querySelector("#cool");
-
-  alert("isn't this cool?");
-
-}
- var cool=prompt("Are you ready?")
-console.log(cool);
+function alert1(){
+alert("isn't this cool?");
+prompt("Are you ready?");
+};
+ 
