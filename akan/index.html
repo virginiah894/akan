@@ -31,18 +31,22 @@ Let us begin and see how cool this is.
 
   
   <h2>share your details</h2>
-  <div class="row">
-      <div class="col-md-9 mb-md-0 mb-5">
-          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
               <div class="row">
                   <div class="col-md-6">
                       <div class="md-form mb-0">
-                          <input type="number" class="form-control">
-                          <label for="name" class="">Date of Birth</label>
+                          <input type="number" class="form-control" id="dob" onblur="check()">
+                          <label >Date of Birth</label>
                       </div>
                   </div>
+                  <div class="row">
+                      <div class="col-md-6">
+                              <input type="number" class="form-control" id="mob" onblur="check()">
+                              <label >Month of Birth </label>
+                          </div>
+                      </div>
+                  
                 
-                  <div class="col-md-6">
+                  <!-- <div class="col-md-6">
                       <div class="md-form mb-0">
                           <label for="Month of Birth" class="">Month</label>
                           <select>
@@ -58,7 +62,7 @@ Let us begin and see how cool this is.
                                       <option>October</option>
                                       <option>November</option>
                                       <option>December</option>
-                                    </select>
+                                    </select> -->
                       </div>
                   </div>
 
