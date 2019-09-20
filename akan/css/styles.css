@@ -5,7 +5,11 @@ h1{
 *{
   /* background-image: url(/images/independence-square.jpg); */
 background-repeat: no-repeat;
+padding: 10px;
 }
 button{
   text-align: center;
+}
+#dow{
+  color:blue;
 }
