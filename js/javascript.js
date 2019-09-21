@@ -4,7 +4,7 @@ function alert1() {
   prompt("Are you ready?");
 }
 
-function checkDate() {
+function checkDate(e) {
   var find = document.getElementById("dob");
   if (find.value <= 0 || find.value > 31) {
     alert("Invalid Date of Birth Entered");
@@ -12,14 +12,14 @@ function checkDate() {
   }
 }
 
-function checkMonth() {
+function checkMonth(e) {
   var con = document.getElementById("mob");
   if (con.value <= 0 || con.value > 12) {
     alert("Invalid Month Entered");
     return false;
   }
 }
-function checkYear() {
+function checkYear(e) {
   var year = document.getElementById("yob");
   if (year.value <= 1800 || year.value > 2030) {
     alert("Invalid year Entered");
@@ -27,7 +27,7 @@ function checkYear() {
   }
 }
 // function to calculate the day of week
-function dayOfWeek() {
+function dayOfWeek(e) {
   var century = parseInt(document.getElementById("cen"));
   var year = parseInt(document.getElementById("yob"));
   var month = parseInt(document.getElementById("mob"));
