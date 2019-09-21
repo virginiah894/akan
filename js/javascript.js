@@ -1,83 +1,104 @@
-
-
-
 document.querySelector("#cool");
-function alert1(){
-alert("isn't this cool?");
-prompt("Are you ready?");
-};
+function alert1() {
+  alert("isn't this cool?");
+  prompt("Are you ready?");
+}
 
-function checkDate(){
+function checkDate() {
   var find = document.getElementById("dob");
-  if(find.value<=0 || find.value>31){
-    alert('Invalid Date of Birth Entered');
- return false;
+  if (find.value <= 0 || find.value > 31) {
+    alert("Invalid Date of Birth Entered");
+    return false;
   }
-};
+}
 
-function checkMonth(){
-  var con=document.getElementById("mob");
-  if(con.value<=0 || con.value>12){
-    alert('Invalid Month Entered');
- return false;
+function checkMonth() {
+  var con = document.getElementById("mob");
+  if (con.value <= 0 || con.value > 12) {
+    alert("Invalid Month Entered");
+    return false;
   }
-};
-function checkYear(){
-  var year=document.getElementById("yob");
-  if(year.value<=1800|| year.value>2030){
-    alert('Invalid year Entered');
- return false;
+}
+function checkYear() {
+  var year = document.getElementById("yob");
+  if (year.value <= 1800 || year.value > 2030) {
+    alert("Invalid year Entered");
+    return false;
   }
-};
+}
 // function to calculate the day of week
-function dayOfWeek(){
-  var century=parseInt(document.getElementById("cen"));
-  var year=parseInt(document.getElementById("yob"));
-  var month=parseInt(document.getElementById("mob"));
-  var day=parseInt(document.getElementById("dob"));
-  var calculate=(((century/4)-2*century-1) + ((5*year/4) ) + ((26*(month+1)/10)) + day ) % 7;
-  if(calculate===0){
-    console.log("Sunday");
+function dayOfWeek() {
+  var century = parseInt(document.getElementById("cen"));
+  var year = parseInt(document.getElementById("yob"));
+  var month = parseInt(document.getElementById("mob"));
+  var day = parseInt(document.getElementById("dob"));
+  var calculate =
+    (century / 4 -
+      2 * century -
+      1 +
+      (5 * year) / 4 +
+      (26 * (month + 1)) / 10 +
+      day) %
+    7;
+  if (calculate === 0 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Akosua.";
   }
-  else if(calculate===1){
-    console.log("Monday");
+  if (calculate === 0 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Kwasi.";
   }
-  else if(calculate===2){
-    console.log("Monday");
+  if (calculate === 1 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Adwoa.";
   }
-  else if(calculate===3){
-    console.log("Wednesday");
+  if (calculate === 1 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Kwadwo.";
   }
-  else if(calculate===4){
-    console.log("Thursday");
+  if (calculate === 2 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Abenaa .";
   }
-  else if(calculate===5){
-    console.log("Friday");
+  if (calculate === 2 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Kwabena.";
   }
-  else if(calculate===6){
-    console.log("Saturday");
+  if (calculate === 3 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Akua.";
+  }
+  if (calculate === 3 && document.getElementById("male") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Kwaku.";
+  }
+  if (calculate === 4 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Yaa.";
+  }
+  if (calculate === 4 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Yao.";
+  }
+  if (calculate === 5 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Afua.";
+  }
+  if (calculate === 5 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Kofi.";
+  }
+  if (calculate === 6 && document.getElementById("female") === Female);
+  {
+    document.getElementById("result").innerHTML = "Your Name is Ama.";
+  }
+  if (calculate === 6 && document.getElementById("male") === Male);
+  {
+    document.getElementById("result").innerHTML = "Your Name is kwame.";
   }
 
-  document.getElementById("result").innerHTML= "Your Name is"+calculate;
-} 
+  cument.getElementById("result").innerHTML = "Your Name is" + calculate;
+}
 
-  // Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
-
-var days= ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
-//   var m=document.querySelector("#mon");
-//   var t=document.querySelector("#tue");
-//   var w=document.querySelector("#wed");
-//   var t=document.querySelector("#thu");
-//   var f=document.querySelector("#fri");
-//   var sa=document.querySelector("#sat");
-//   var gender=document.querySelector("#gen");
-//   var print;
- 
-// if (sun=="Male"){
-// print=kwasi;
-// }
-// else if(sun=="Female"){
-//   print=Akosua;
-// }
 // document.querySelector("#Result").innerHTML=print;
 // }
