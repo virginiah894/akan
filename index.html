@@ -40,7 +40,6 @@
       </div>
     </section>
     <form>
-      
       <section class="mb-4">
         <h2>share your details</h2>
         <div class="row">
@@ -53,13 +52,12 @@
                 class="form-control"
                 id="dob"
                 name="dob"
-        />
-              <label>Date of Birth</label> <input type="submit" value="Submit" onclick="checkDate()">
-
-
-
+              />
+              <label>Date of Birth</label>
+              <input type="submit" value="Submit" onclick="checkDate()" />
             </div>
           </div>
+        </div>
           <div class="row">
             <div class="col-md-6">
               <div class="md-form mb-0">
@@ -70,15 +68,16 @@
                   class="form-control"
                   id="mob"
                   name="mob"
-        
+              
                 />
-                <input type="submit" value="Submit"onclick="checkMonth()">
-
                 <label>Month</label>
+                <input type="submit" value="Submit" onclick="checkMonth()" />
+
+                
               </div>
             </div>
           </div>
-        </div>
+        
 
         <!-- second column with row specs -->
         <div class="row">
@@ -93,7 +92,9 @@
                 class="form-control"
               />
               <label for="year" class="">year of birth(YOB)</label>
-              <input type="submit" value="Submit"onclick="checkYear()">
+              <input
+                type="submit"value="Submit"onclick="checkYear()"
+              />
             </div>
           </div>
           <div class="col-md-6">
@@ -116,10 +117,12 @@
             <div class="md-form mb-0">
               <div class="gen">Gender</div>
 
-              <label><input type="checkbox" value="" name="female" />Female</label>
+              <label
+                ><input type="checkbox" value="" name="female" />Female</label
+              >
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="" name="male"/>Male</label>
+              <label><input type="checkbox" value="" name="male" />Male</label>
             </div>
           </div>
         </div>
