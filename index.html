@@ -48,11 +48,13 @@
             <div class="md-form mb-0">
               <input
                 type="number"
+                min="1"
+                max="31"
                 class="form-control"
                 id="dob"
                 name="dob"
         />
-              <label>Date of Birth</label> <input type="submit" value="Submit" onblur="checkDate()">
+              <label>Date of Birth</label> <input type="submit" value="Submit" onclick="checkDate()">
 
 
 
@@ -63,12 +65,14 @@
               <div class="md-form mb-0">
                 <input
                   type="number"
+                  min="1"
+                  max="12"
                   class="form-control"
                   id="mob"
                   name="mob"
         
                 />
-                <input type="submit" value="Submit" onblur="checkMonth()">
+                <input type="submit" value="Submit"onclick="checkMonth()">
 
                 <label>Month</label>
               </div>
@@ -89,6 +93,7 @@
                 class="form-control"
               />
               <label for="year" class="">year of birth(YOB)</label>
+              <input type="submit" value="Submit"onclick="checkYear()">
             </div>
           </div>
           <div class="col-md-6">

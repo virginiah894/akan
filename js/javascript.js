@@ -1,3 +1,6 @@
+
+
+
 document.querySelector("#cool");
 function alert1(){
 alert("isn't this cool?");
@@ -16,6 +19,13 @@ function checkMonth(){
   var con=document.getElementById("mob");
   if(con.value<=0 || con.value>12){
     alert('Invalid Month Entered');
+ return false;
+  }
+};
+function checkYear(){
+  var year=document.getElementById("yob");
+  if(year.value<=1800|| year.value>2030){
+    alert('Invalid year Entered');
  return false;
   }
 };
