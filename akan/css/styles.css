@@ -1,15 +1,36 @@
-h1{
+h1 {
   text-align: center;
-  color:blue;
+  color: blue;
 }
-*{
-  /* background-image: url(/images/independence-square.jpg); */
-background-repeat: no-repeat;
-padding: 10px;
+* {
+  background-image: url(/images/img\();
+  background-repeat: no-repeat;
+  padding: 10px;
 }
-button{
+button {
   text-align: center;
 }
-#dow{
-  color:blue;
+#dow {
+  color: blue;
 }
+nav{
+  display: inline-block;
+  text-align: right;
+  width: 100%;
+  background-color:whitesmoke;
+  padding:10px;
+  }
+  #nav{
+    position:-webkit-sticky;
+    overflow: hidden;
+  }
+  
+  nav>ul>li{
+    display: inline;
+    font-size:1.3em;
+    padding-left:52px;
+  }
+  nav>ul>li>a{
+    display:inline-block;
+    text-decoration: none;
+  }
