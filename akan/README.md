@@ -1,6 +1,6 @@
 # Application Name
 Akan Naming application website.
-#### {Brief description of application}, {Date of current version}
+#### Brief description of application
 This is a website application which integrates the user's input which is date of birth,Month of birth,Year of birth and the century.The app calculates finds the day of the week using the formula
 Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7.
 The value acquired is what the system uses  to give you an Akan name from Ghana.
