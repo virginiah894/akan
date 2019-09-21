@@ -2,3 +2,14 @@ h1{
   text-align: center;
   color:blue;
 }
+*{
+  /* background-image: url(/images/independence-square.jpg); */
+background-repeat: no-repeat;
+padding: 10px;
+}
+button{
+  text-align: center;
+}
+#dow{
+  color:blue;
+}
