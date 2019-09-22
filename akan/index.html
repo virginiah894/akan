@@ -1,136 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
-    <title>AKAN NAMING APPLICATION</title>
-  </head>
-  <body>
-    <h1>AKAN NAMING APPLICATION</h1>
-    <hr />
-    <nav>
-      <ul>
-        <li>ABOUT THE APPLICATION</li>
-        <li>YOUR AKAN NAME</li>
-        <li>FOLLOW US!!</li>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/styles.css" />
 
-      </ul>
-    </nav>
-    <section>
-      <h2>ABOUT THE APPLICATION</h2>
-      <p>
-        This is a modern application which assigns users a name based on their
-        date of birth ,the day of birth and their gender. This application
-        borrows alot from the Akan community naming system whereby children are
-        named after the day of the week they were born .
-      </p>
-      <div id="how">
-        <h4>How to use</h4>
-        The user is only required to imput their date of birth and their
-        gender,the sytem will automatically find the day of birth then
-        submit.Your Akan Name will automatically show up on website.
-      </div>
-      <div id="cool">
-        Let us begin and see how cool this is.
-        <br />
-        <button class="bg-success" id="click" onclick="alert1()">
-          Click here
-        </button>
-      </div>
-    </section>
-    <form>
-      <section class="mb-4">
-        <h2>share your details</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input
-                type="number"
-                min="1"
-                max="31"
-                class="form-control"
-                id="dob"
-                name="dob"
-              />
-              <label>Date of Birth</label>
-              <input type="submit" value="Submit" onclick="checkDate()" />
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input
-                type="number"
-                min="1"
-                max="12"
-                class="form-control"
-                id="mob"
-                name="mob"
-              />
-              <label>Month</label>
-              <input type="submit" value="Submit" onclick="checkMonth()" />
-            </div>
-          </div>
-        </div>
+<title>AKAN NAMING APPLICATION</title>
+</head>
+<body>
+<h1>AKAN NAMING APPLICATION</h1>
+<hr />
+<nav>
+<ul>
+<li>ABOUT THE APPLICATION</li>
+<li>YOUR AKAN NAME</li>
+<li>FOLLOW US!!</li>
+</ul>
+</nav>
+<section>
+<h2>ABOUT THE APPLICATION</h2>
+<p>
+This is a modern application which assigns users a name based on their
+date of birth ,the day of birth and their gender. This application
+borrows alot from the Akan community naming system whereby children are
+named after the day of the week they were born .
+</p>
+<div id="how">
+<h4>How to use</h4>
+The user is only required to imput their date of birth and their
+gender,the sytem will automatically find the day of birth then
+submit.Your Akan Name will automatically show up on website.
+</div>
+<div id="cool">
+Let us begin and see how cool this is.
+<br />
+<button class="bg-success" id="click" onclick='alert("Share Your Details");'>
+Click here
+</button>
+</div>
+</section>
 
-        <!-- second column with row specs -->
-        <div class="row">
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input
-                type="number"
-                min="1800"
-                max="2030"
-                id="yob"
-                name="yob"
-                class="form-control"
-              />
-              <label for="year" class="">year of birth(YOB)</label>
-              <input type="submit" value="Submit" onclick="checkYear()" />
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <input
-                type="number"
-                min="12"
-                max="21"
-                id="cen"
-                name="cent"
-                class="form-control"
-              />
-              <label for="century" class="">Century in digits cc</label>
-            </div>
-          </div>
-        </div>
+<section class="mb-4">
+<h2>share your details</h2>
+<div class="row">
+<div class="col-md-6">
+<div class="md-form mb-0">
+<input
+type="number"
+min="1"
+max="31"
+class="form-control"
+id="dob"
+name="dob"
+/>
+<label>Date of Birth</label>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="md-form mb-0">
-              <div class="gen">Gender</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="md-form mb-0">
+<input
+type="number"
+min="1"
+max="12"
+class="form-control"
+id="mob"
+name="mob"
+/>
+<label>Month</label>
+</div>
+</div>
+</div>
+<!-- second column with row specs -->
+<div class="row">
+<div class="col-md-6">
+<div class="md-form mb-0">
+<input
+type="number"
+min="0"
+max="2030"
+id="yob"
+name="yob"
+class="form-control"
+/>
+<label for="year" class="">year of birth(YOB)</label>
+</div>
+</div>
+<div class="col-md-6">
+<div class="md-form mb-0">
+<input
+type="number"
+min="12"
+max="21"
+id="cen"
+name="cent"
+class="form-control"
+/>
+<label for="century" class="">Century in digits cc</label>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="md-form mb-0">
+<div class="gen">Gender</div>
+<label
+><input type="text"  name="female" id="gender" />Enter your Gender eg.Female</label>
 
-              <label
-                ><input type="checkbox" value="" name="female" />Female</label
-              >
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox" value="" name="male" />Male</label>
-            </div>
-          </div>
-        </div>
+</div>
+<div class="checkbox">
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6"></div>
+<button id="result" name="Result" class="bg-success" onclick='dayOfWeek();'>Results</button>
+</div>
+</section>
 
-        <div class="row">
-          <div class="col-md-6"></div>
-          <button id="result" name="result" class="bg-success" onclick="dayOfWeek()">Results</button>
-        </div>
-      </section>
-    </form>
 
-    <script src="./js/javascript.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-  </body>
+<script src="./js/javascript.js"></script>
+<script src="./js/bootstrap.min.js"></­script>
+
+</body>
 </html>

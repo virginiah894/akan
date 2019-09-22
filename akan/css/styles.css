@@ -6,6 +6,7 @@ h1 {
   background-image: url(/images/img\();
   background-repeat: no-repeat;
   padding: 10px;
+  scroll-behavior: smooth;
 }
 button {
   text-align: center;
@@ -20,11 +21,6 @@ nav{
   background-color:whitesmoke;
   padding:10px;
   }
-  #nav{
-    position:-webkit-sticky;
-    overflow: hidden;
-  }
-  
   nav>ul>li{
     display: inline;
     font-size:1.3em;
