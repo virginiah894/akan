@@ -3,26 +3,89 @@ h1 {
   color: blue;
 }
 * {
-  background-image: url(/images/img\();
-  background-repeat: no-repeat;
   padding: 10px;
   scroll-behavior: smooth;
+  
 }
 button {
   text-align: center;
 }
-#dow {
-  color: blue;
-}
-nav{
-  display: inline-block;
-  text-align: right;
-  width: 100%;
-  background-color:whitesmoke;
-  padding:10px;
+   nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
   }
-  nav>li{
-    display: inline;
-    font-size:1.3em;
-    padding-left:52px;
+  nav>ul>li {
+    float: left;
+  }
+  
+  nav>ul>li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+  
+  .fa-snapchat-ghost {
+    background: #fffc00;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .fa-skype {
+    background: #00aff0;
+    color: white;
+  }
+  
+  #som{
+    display: flex;
+    flex-direction: row;
+    background-color: #333
   }

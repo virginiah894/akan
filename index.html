@@ -5,19 +5,25 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<link rel="stylesheet" type="text/css" href="/css/styles.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/styles.css" />
 <title>AKAN NAMING APPLICATION</title>
 </head>
 <body>
 <h1>AKAN NAMING APPLICATION</h1>
 <hr />
 <nav>
-<li>ABOUT THE APPLICATION</li>
-<li>YOUR AKAN NAME</li>
-<li>FOLLOW US!!</li>
+  <ul>
+    <li><a href="#about">About application</a></li>
+    <li><a href="#cool">Try it out</a></li>
+    <li><a href="#som">Follow us!!</a></li>
+  
+  </ul>
+  
 </nav>
 <section>
+ <div id="about">
 <h2>ABOUT THE APPLICATION</h2>
 <p>
 This is a modern application which assigns users a name based on their
@@ -31,13 +37,15 @@ The user is only required to imput their date of birth and their
 gender,the sytem will automatically find the day of birth then
 submit.Your Akan Name will automatically show up on website.
 </div>
+ </div>
+
 <div id="cool">
 Let us begin and see how cool this is.
 <br />
 <button class="bg-success" id="click" onclick='alert("Share Your Details");'>
 Click here
 </button>
-</div>
+
 </section>
 
 <section class="mb-4">
@@ -118,7 +126,22 @@ class="form-control"
 <div class="col-md-6"></div>
 <button id="result" name="Result" class="bg-success" onclick='dayOfWeek();'>Results</button>
 </div>
+</div>
 </section>
+<div id="som">
+    <a href="#" class="fa fa-facebook fa-4x"></a>
+    <a href="#" class="fa fa-twitter fa-4x"></a>
+    <a href="" class="fa fa-instagram fa-4x"></a>
+    <a href="#" class="fa fa-youtube fa-4x"></a>
+    <a href="#" class="fa fa-snapchat fa-4x"></a>
+    <a href="#" class="fa fa-pinterest fa-4x"></a>
+    <a href="#" class="fa fa-skype fa-4x"></a>
+</div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+  <div class="container text-center">
+    <small>Copyright &copy;VIRGINIAH PERIAH ,2019</small>
+  </div>
+</footer>
 
 
 <script src="./js/javascript.js"></script>
