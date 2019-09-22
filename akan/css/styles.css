@@ -5,7 +5,14 @@ h1 {
 * {
   padding: 10px;
   scroll-behavior: smooth;
-  
+nav{
+  background-color: blue;
+}
+}
+#about{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.9em;
+  color:black;
 }
 button {
   text-align: center;
