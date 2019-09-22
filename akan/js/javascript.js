@@ -1,8 +1,29 @@
 
 // limits for data inputs
 
-
-
+// function checkDate(){
+//   var find=document.getElementById("dob");
+//   if(find.value<=0 || find.value>31){
+//     alert('Invalid Date of Birth Entered');
+ 
+//  return false;
+//   }
+//  };
+ 
+//  function checkMonth(){
+//   var con=document.getElementById("mob");
+//   if(con.value<=0 || con.value>12){
+//     alert('Invalid Month Entered');
+//  return false;
+//   }
+//  };
+//  function checkYear(){
+//   var year=document.getElementById("yob");
+//   if(year.value<=1800 || year.value>2030){
+//     alert('Invalid year Entered');
+//      return false;
+//   }
+//  }
 
 
 

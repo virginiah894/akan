@@ -21,12 +21,8 @@ nav{
   background-color:whitesmoke;
   padding:10px;
   }
-  nav>ul>li{
+  nav>li{
     display: inline;
     font-size:1.3em;
     padding-left:52px;
-  }
-  nav>ul>li>a{
-    display:inline-block;
-    text-decoration: none;
   }
