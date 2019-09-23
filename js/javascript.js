@@ -1,111 +1,97 @@
+function dayOfWeek(){
 
-document.querySelector("#cool");
-function alert1(){
-alert("Isn't this cool?");
-};
-
-
-
-function checkDate(){
-  var find=document.getElementById("dob");
-  if(find.value<=0 || find.value>31){
-    alert('Invalid Date of Birth Entered');
-    
- return false;
-  }
-};
-
-function checkMonth(){
-  var con=document.getElementById("mob");
-  if(con.value<=0 || con.value>12){
-    alert('Invalid Month Entered');
- return false;
-  }
-};
-function checkYear(){
-  var year=document.getElementById("yob");
-  if(year.value<=1800 || year.value>2030){
-    alert('Invalid year Entered');
-     return false;
-  }
-};
-function dayOfWeek(e) {
-  e.preventDefault(); 
-  var century = parseInt(document.getElementById("cen"));
-  var year = parseInt(document.getElementById("yob"));
-  var month = parseInt(document.getElementById("mob"));
-  var day = parseInt(document.getElementById("dob"));
+var century=parseInt(document.getElementById("cen").value);
+  var year=parseInt(document.getElementById("yob").value);
+  var month=parseInt(document.getElementById("mob").value);
+  var day=parseInt(document.getElementById("dob").value);
   var calculate =
-    (century / 4 -
-      2 * century -
-      1 +
-      (5 * year) / 4 +
-      (26 * (month + 1)) / 10 +
-      day) %
-    7;
-    var calculateA= math.round(calculate);
-    if (calculateA == 0 && document.getElementById("female").value==="Female");{
-      e.preventDefault()
-      document.getElementById("result").innerHTML = "Your Name is Akosua.";
-    }  if (calculateA == 0 && document.getElementById("male").value==="Male");{
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Kwasi.";
-  }
-  if (calculateA == 1 && document.getElementById("female").value==="Female");{
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Adwoa.";
-  }
-  if (calculateA == 1 && document.getElementById("male").value==="Male");{
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Kwadwo.";
-  }
-  if (calculateA == 2 && document.getElementById("female").value==="Female");
+  (((century / 4) -
+  2 * century -
+  1) +
+  (5 * year / 4) +
+  (26 * (month + 1) / 10) +
+  day) %
+  7;
+  var calculateA=Math.round(calculate);
+  console.log(calculateA);
+  
+  var gender=document.getElementById("gender").value.toLowerCase();
+  /*if (month<1  || month>12 || month==2 && day>29)
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Abenaa .";
+    alert("invalid");
   }
-  if (calculateA == 2 && document.getElementById("male").value==="Male");
+  else if( day< 1 || day>31)
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Kwabena.";
+    alert("invalid");
+  }*/
+  
+  if (calculateA == 0 && gender =="female"){
+  
+  document.getElementById("result").innerHTML = "Your Name is Akosua.";
   }
-  if (calculateA == 3 && document.getElementById("female").value==="Female");
+  if (calculateA == 0 && gender =="male"){
+  
+  document.getElementById("result").innerHTML = "Your Name is Kwasi.";
+  }
+  if (calculateA == 1 && gender =="female"){
+  
+  document.getElementById("result").innerHTML = "Your Name is Adwoa.";
+  }
+  if (calculateA == 1 && gender =="male")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Akua.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Kwadwo.";
   }
-  if (calculateA == 3 && document.getElementById("male").value==="Female");
+  if (calculateA == 2 && gender =="female")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Kwaku.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Abenaa .";
   }
-  if (calculateA == 4 && document.getElementById("female").value==="Female");
+  if (calculateA == 2 && gender =="male")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Yaa.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Kwabena.";
   }
-  if (calculateA == 4 && document.getElementById("male").value==="Male");
+  if (calculateA == 3 && gender =="female")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Yao.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Akua.";
   }
-  if (calculateA == 5 && document.getElementById("female").value==="Female");
+  if (calculateA == 3 && gender =="female")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Afua.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Kwaku.";
   }
-  if (calculateA == 5 && document.getElementById("male").value==="Male");
+  if (calculateA == 4 && gender  =="female")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Kofi.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Yaa.";
   }
-  if (calculateA == 6 && document.getElementById("female").value==="Female");
+  if (calculateA == 4 && gender =="male")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is Ama.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Yaw.";
   }
-  if (calculateA == 6 && document.getElementById("male").value==="Male");
+  if (calculateA == 5 && "gender" =="female")
   {
-    e.preventDefault()
-    document.getElementById("result").innerHTML = "Your Name is kwame.";
+  
+  document.getElementById("result").innerHTML = "Your Name is Afua.";
   }
+  if (calculateA == 5 && gender =="male")
+  {
+  
+  document.getElementById("result").innerHTML = "Your Name is Kofi.";
+  }
+  if (calculateA == 6 && gender =="female")
+  {
+  
+  document.getElementById("result").innerHTML = "Your Name is Ama.";
+  }
+  if (calculateA == 6 && gender =="male")
+  {
+  
+  document.getElementById("result").innerHTML = "Your Name is kwame.";
+  }
+}
+
+  
