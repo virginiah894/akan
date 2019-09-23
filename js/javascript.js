@@ -1,9 +1,11 @@
-function dayOfWeek(){
 
-var century=parseInt(document.getElementById("cen").value);
-  var year=parseInt(document.getElementById("yob").value);
-  var month=parseInt(document.getElementById("mob").value);
-  var day=parseInt(document.getElementById("dob").value);
+
+function dayOfWeek() {
+
+  var century =parseInt(document.getElementById("cen").value);
+  var year = parseInt(document.getElementById("yob").value);
+  var month = parseInt(document.getElementById("mob").value);
+  var day = parseInt(document.getElementById("dob").value);
   var calculate =
   (((century / 4) -
   2 * century -
@@ -12,33 +14,23 @@ var century=parseInt(document.getElementById("cen").value);
   (26 * (month + 1) / 10) +
   day) %
   7;
-  var calculateA=Math.round(calculate);
-  console.log(calculateA);
   
-  var gender=document.getElementById("gender").value.toLowerCase();
-  /*if (month<1  || month>12 || month==2 && day>29)
-  {
-    alert("invalid");
-  }
-  else if( day< 1 || day>31)
-  {
-    alert("invalid");
-  }*/
+  var calculateA= Math.round(calculate);
+  var gender = document.getElementById("gender").value.toLowerCase();
   
   if (calculateA == 0 && gender =="female"){
   
   document.getElementById("result").innerHTML = "Your Name is Akosua.";
   }
-  if (calculateA == 0 && gender =="male"){
+  if (calculateA == 0 && gender == "male"){
   
   document.getElementById("result").innerHTML = "Your Name is Kwasi.";
   }
-  if (calculateA == 1 && gender =="female"){
+  if (calculateA == 1 && gender == "female"){
   
   document.getElementById("result").innerHTML = "Your Name is Adwoa.";
   }
-  if (calculateA == 1 && gender =="male")
-  {
+  if (calculateA == 1 && gender =="male"){
   
   document.getElementById("result").innerHTML = "Your Name is Kwadwo.";
   }
@@ -47,12 +39,12 @@ var century=parseInt(document.getElementById("cen").value);
   
   document.getElementById("result").innerHTML = "Your Name is Abenaa .";
   }
-  if (calculateA == 2 && gender =="male")
+  if (calculateA == 2 && gender == "male")
   {
   
   document.getElementById("result").innerHTML = "Your Name is Kwabena.";
   }
-  if (calculateA == 3 && gender =="female")
+  if (calculateA == 3 && gender == "female")
   {
   
   document.getElementById("result").innerHTML = "Your Name is Akua.";
@@ -62,7 +54,7 @@ var century=parseInt(document.getElementById("cen").value);
   
   document.getElementById("result").innerHTML = "Your Name is Kwaku.";
   }
-  if (calculateA == 4 && gender  =="female")
+  if (calculateA == 4 && gender  == "female")
   {
   
   document.getElementById("result").innerHTML = "Your Name is Yaa.";
@@ -92,6 +84,35 @@ var century=parseInt(document.getElementById("cen").value);
   
   document.getElementById("result").innerHTML = "Your Name is kwame.";
   }
-}
+  
+  }
+  var cent =document.getElementById("cen").value;
+  var yer = document.getElementById("yob").value;
+  var mon = document.getElementById("mob").value;
+  var dd = document.getElementById("dob").value;
 
+  function CheckCent(){
+    if(cent==''|| cent==null){
+      alert('Century is Required');
+    }
+  }
+  function Checkyear(){
+    if(yer==''|| yer==null){
+      alert('Year is Required');
+    }
+  }
+
+  function Checkmonth(){
+    if(mon==''|| mon==null){
+      alert('Month is  Required');
+    }
+  }
+  function Checkday(){
+    if(dd==''|| dd==null){
+      alert('Date is  Required');
+    }
+  }
+
+
+  
   
